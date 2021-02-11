@@ -3,11 +3,20 @@ import streamlit as st
 import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sn
+import requests
+import io
 st.set_option('deprecation.showPyplotGlobalUse', False)
+
+
+    
+# Downloading the csv file from your GitHub account
+
+url = "https://raw.githubusercontent.com/spookbite/streamlit-stocks_and_tweets/master/tweets_and_stocks_left_merged_without_tweets_new.csv" 
+download = requests.get(url).content
 
 @st.cache
 def get_data():
-    return pd.read_csv(r"C:\Users\Palkit Lohia\Desktop\JSI stocks and tweets\tweets_and_stocks_left_merged_without_tweets_new.csv")
+    return pd.read_csv(io.StringIO(download.decode('utf-8')))
 
 df = get_data()
 st.title("Stocks Variation")
