@@ -12,7 +12,7 @@ pip install plotly
 pip install matplotlib
 ```
 
-##Usage
+## Usage
 
 Clone this repo on your system 
 
