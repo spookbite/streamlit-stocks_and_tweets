@@ -1,8 +1,8 @@
-!pip install streamlit
-!pip install pandas
-!pip install seaborn
-!pip install plotly
-!pip install matplotlib
+pip install streamlit
+pip install pandas
+pip install seaborn
+pip install plotly
+pip install matplotlib
 
 import pandas as pd
 import streamlit as st
