@@ -1,5 +1,3 @@
-pip install streamlit
-pip install pandas
 pip install seaborn
 pip install plotly
 pip install matplotlib
