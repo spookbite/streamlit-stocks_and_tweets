@@ -1,7 +1,3 @@
-pip install seaborn
-pip install plotly
-pip install matplotlib
-
 import pandas as pd
 import streamlit as st
 import plotly.express as px
